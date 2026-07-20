@@ -1,0 +1,16 @@
+node_modules/
+npm-debug.log*
+
+# Artefatos de execução do Cypress
+cypress/screenshots/
+cypress/downloads/
+cypress/reports/
+
+# Ambiente
+.env
+cypress.env.json
+
+# Sistema operacional / editor
+.DS_Store
+.idea/
+*.swp

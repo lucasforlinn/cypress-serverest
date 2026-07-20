@@ -1,0 +1,36 @@
+{
+  "name": "cypress-serverest",
+  "version": "1.0.0",
+  "description": "Suite de testes automatizados (UI + API) para o ServeRest, com Cypress.",
+  "author": "Lucas Forlin",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "test:e2e": "cypress run --spec \"cypress/e2e/ui/**/*.cy.js\"",
+    "test:report": "open cypress/reports/index.html",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,json,md,yml}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md,yml}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasforlinn/cypress-serverest.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.18.1",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "eslint": "^10.7.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-cypress": "^6.4.3",
+    "prettier": "^3.9.5"
+  }
+}
